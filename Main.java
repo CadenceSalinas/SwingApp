@@ -11,5 +11,15 @@ public class Main
 		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame1.setSize(500,500);
 		frame1.setVisible(true);
+		//---Button 1---
+		JButton useless = new JButton("Test1");
+		frame1.add(useless);
+		useless.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				System.out.println("This is a useless button.");
+			}
+		});
 	}
 }//end main class
